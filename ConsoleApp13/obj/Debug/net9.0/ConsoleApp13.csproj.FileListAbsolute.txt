@@ -3,3 +3,13 @@
 /Users/illiapaidych/RiderProjects/ConsoleApp13/ConsoleApp13/obj/Debug/net9.0/ConsoleApp13.AssemblyInfo.cs
 /Users/illiapaidych/RiderProjects/ConsoleApp13/ConsoleApp13/obj/Debug/net9.0/ConsoleApp13.csproj.CoreCompileInputs.cache
 /Users/illiapaidych/RiderProjects/ConsoleApp13/ConsoleApp13/obj/Debug/net9.0/ConsoleApp13.sourcelink.json
+/Users/illiapaidych/RiderProjects/ConsoleApp13/ConsoleApp13/bin/Debug/net9.0/ConsoleApp13
+/Users/illiapaidych/RiderProjects/ConsoleApp13/ConsoleApp13/bin/Debug/net9.0/ConsoleApp13.deps.json
+/Users/illiapaidych/RiderProjects/ConsoleApp13/ConsoleApp13/bin/Debug/net9.0/ConsoleApp13.runtimeconfig.json
+/Users/illiapaidych/RiderProjects/ConsoleApp13/ConsoleApp13/bin/Debug/net9.0/ConsoleApp13.dll
+/Users/illiapaidych/RiderProjects/ConsoleApp13/ConsoleApp13/bin/Debug/net9.0/ConsoleApp13.pdb
+/Users/illiapaidych/RiderProjects/ConsoleApp13/ConsoleApp13/obj/Debug/net9.0/ConsoleApp13.dll
+/Users/illiapaidych/RiderProjects/ConsoleApp13/ConsoleApp13/obj/Debug/net9.0/refint/ConsoleApp13.dll
+/Users/illiapaidych/RiderProjects/ConsoleApp13/ConsoleApp13/obj/Debug/net9.0/ConsoleApp13.pdb
+/Users/illiapaidych/RiderProjects/ConsoleApp13/ConsoleApp13/obj/Debug/net9.0/ConsoleApp13.genruntimeconfig.cache
+/Users/illiapaidych/RiderProjects/ConsoleApp13/ConsoleApp13/obj/Debug/net9.0/ref/ConsoleApp13.dll
