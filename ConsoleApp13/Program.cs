@@ -1,4 +1,7 @@
-﻿abstract class Vehicle
+﻿namespace ConsoleApp13;
+
+
+abstract class Vehicle
 {
     public string brand;
     public int speed;
