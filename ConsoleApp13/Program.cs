@@ -1,89 +1,61 @@
 ﻿namespace ConsoleApp13;
 
-
-
-
 class Program
 {
-    static void Main()
+    static void Main(string[] args)
     {
-        List<Cookware> kitchen = new List<Cookware>()
+        List<Artifact> inventory = new List<Artifact>();
+
+        inventory.Add(new MagicScroll(101));
+        inventory.Add(new AncientSword(202));
+
+        Console.WriteLine("--- Аналіз інвентарю ---");
+
+        foreach (var item in inventory)
         {
-            new Pan("Tefal", 180),
-            new Pot("Bosch", 100),
-            new Kettle("Philips", 100)
-        };
-
-        foreach (Cookware item in kitchen)
-        {
-            item.Cook();
-
-            if (item is Refillable refillable)
-            {
-                refillable.Refill();
-            }
-
-            Console.WriteLine();
+            item.Identify();
         }
+
+        Console.WriteLine("\nНатисніть будь-яку клавішу для виходу...");
+        Console.ReadKey();
     }
 }
 
-abstract class Cookware
+public class Artifact
 {
-    public string brand;
-    public int temperature;
+    private int id;
 
-    public Cookware(string brand, int temperature)
+    public Artifact(int id)
     {
-        this.brand = brand;
-        this.temperature = temperature;
+        this.id = id;
     }
 
-    public abstract void Cook();
+    public virtual void Identify()
+    {
+        Console.WriteLine($"[Artifact ID: {id}] Це невідомий стародавній предмет.");
+    }
 }
 
-interface Refillable
+public class MagicScroll : Artifact
 {
-    void Refill();
+    public MagicScroll(int id) : base(id)
+    {
+    }
+
+    public override void Identify()
+    {
+        Console.WriteLine("[Magic Scroll] Це сувій з закляттям вогню.");
+    }
 }
 
-class Pan : Cookware
+public class AncientSword : Artifact
 {
-    public Pan(string brand, int temperature) : base(brand, temperature) { }
-
-    public override void Cook()
+    public AncientSword(int id) : base(id)
     {
-        Console.WriteLine($"Pan {brand} is frying food at {temperature}°C");
+    }
+
+    public override void Identify()
+    {
+        Console.WriteLine("[Ancient Sword] Це заіржавілий меч короля.");
     }
 }
-
-class Pot : Cookware, Refillable
-{
-    public Pot(string brand, int temperature) : base(brand, temperature) { }
-
-    public override void Cook()
-    {
-        Console.WriteLine($"Pot {brand} is boiling soup at {temperature}°C");
-    }
-
-    public void Refill()
-    {
-        Console.WriteLine($"Pot {brand} is filled with water");
-    }
-}
-
-class Kettle : Cookware, Refillable
-{
-    public Kettle(string brand, int temperature) : base(brand, temperature) { }
-
-    public override void Cook()
-    {
-        Console.WriteLine($"Kettle {brand} is boiling water at {temperature}°C");
-    }
-
-    public void Refill()
-    {
-        Console.WriteLine($"Kettle {brand} is refilled with water");
-    }
-}
-
